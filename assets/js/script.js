@@ -5,17 +5,16 @@ $(document).ready(function(){
   var close = $(".close");
 
   /* eventi */
-  /* click su button per far apparire menu */
+  /* click su button per far apparire hamburger-menu */
   button.click(function(){ 
-
     /* menu appare dopo click */
     hamburger.fadeIn(1500);
+  })
 
+  /* click su close per far scomparire hamburger-menu */
+  close.click(function(){
     /* menu scompare dopo click sulla x */
-    close.click(function(){
-      hamburger.fadeOut(1500)
-    })
-
+    hamburger.fadeOut(1500);
   })
 
 })
